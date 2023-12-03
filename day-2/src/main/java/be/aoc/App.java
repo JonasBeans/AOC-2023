@@ -1,5 +1,7 @@
 package be.aoc;
 
+import be.aoc.service.CubeService;
+
 /**
  * Hello world!
  *
@@ -8,6 +10,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        CubeService service = new CubeService();
+        service.readFile(args[0]);
     }
 }
